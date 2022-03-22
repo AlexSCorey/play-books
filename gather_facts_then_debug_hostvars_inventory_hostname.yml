@@ -2,7 +2,7 @@
   tasks:
     - debug:
       msg: play1
-- name: play 1
-  import_playbook: gather_facts.yml
-- name: play 2
-  import_playbook: debug_hostvars_inventory_hostname.yml
+    - name: play 1
+      import_playbook: gather_facts.yml
+    - name: play 2
+      import_playbook: debug_hostvars_inventory_hostname.yml
