@@ -3,3 +3,5 @@
   tasks:
     - debug:
         var: hostvars[inventory_hostname]
+    - name: gather facts
+      import_playbook: gather_facts.yml

@@ -1,8 +1,6 @@
 - hosts: localhost
   tasks:
-  - debug:
-      msg: play1
-  - name: play 1
+    - name: gather facts
       import_playbook: gather_facts.yml
-  - name: play 2
+    - name: debug host vars inventory hostname
       import_playbook: debug_hostvars_inventory_hostname.yml
